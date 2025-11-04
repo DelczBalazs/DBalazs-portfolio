@@ -6,15 +6,10 @@ import React, {
     createContext,
     useContext,
 } from "react";
-import {
-    IconArrowNarrowLeft,
-    IconArrowNarrowRight,
-    IconX,
-} from "@tabler/icons-react";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { cn } from '../../../utils/cn';
-import { AnimatePresence, motion } from "motion/react";
-import Image, { ImageProps } from "next/image";
-import { useOutsideClick } from "@/hooks/use-outside-click";
+import { AnimatePresence, motion } from "framer-motion";
+import { useOutsideClick } from "../../../hooks/use-outside-click";
 
 interface CarouselProps {
     items: JSX.Element[];
@@ -138,14 +133,14 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                         onClick={scrollLeft}
                         disabled={!canScrollLeft}
                     >
-                        <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
+                        <ChevronLeft className="h-6 w-6 text-gray-500" />
                     </button>
                     <button
                         className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
                         onClick={scrollRight}
                         disabled={!canScrollRight}
                     >
-                        <IconArrowNarrowRight className="h-6 w-6 text-gray-500" />
+                        <ChevronRight className="h-6 w-6 text-gray-500" />
                     </button>
                 </div>
             </div>
@@ -217,7 +212,7 @@ export const Card = ({
                                 className="sticky top-4 right-0 ml-auto flex h-8 w-8 items-center justify-center rounded-full bg-black dark:bg-white"
                                 onClick={handleClose}
                             >
-                                <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
+                                <X className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
                             </button>
                             <motion.p
                                 layoutId={layout ? `category-${card.title}` : undefined}
@@ -259,13 +254,14 @@ export const Card = ({
                 <BlurImage
                     src={card.src}
                     alt={card.title}
-                    fill
                     className="absolute inset-0 z-10 object-cover"
                 />
             </motion.button>
         </>
     );
 };
+
+type BlurImageProps = React.ImgHTMLAttributes<HTMLImageElement> & { src: string };
 
 export const BlurImage = ({
     height,
@@ -274,23 +270,22 @@ export const BlurImage = ({
     className,
     alt,
     ...rest
-}: ImageProps) => {
+}: BlurImageProps) => {
     const [isLoading, setLoading] = useState(true);
     return (
         <img
             className={cn(
                 "h-full w-full transition duration-300",
                 isLoading ? "blur-sm" : "blur-0",
-                className,
+                className
             )}
             onLoad={() => setLoading(false)}
-            src={src as string}
+            src={src}
             width={width}
             height={height}
             loading="lazy"
             decoding="async"
-            blurDataURL={typeof src === "string" ? src : undefined}
-            alt={alt ? alt : "Background of a beautiful view"}
+            alt={alt ? alt : "Background image"}
             {...rest}
         />
     );
