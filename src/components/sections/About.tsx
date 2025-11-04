@@ -9,7 +9,7 @@ export default function About() {
                 </h2>
 
                 <p className="mt-6 text-lg text-muted">
-                    I love designing and building <strong>clean, scalable full-stack products</strong> that feel effortless to use and reliable to maintain. My focus is clear code, strong fundamentals, and workflows that scale.
+                    I love designing and building <strong>clean, scalable full-stack products</strong> that feel effortless to use and reliable to maintain. My focus is clean-code, strong fundamentals, and workflows that scale.
                 </p>
 
                 <p className="mt-4 text-lg text-muted">
