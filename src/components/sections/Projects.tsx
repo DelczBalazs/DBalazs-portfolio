@@ -1,5 +1,8 @@
 import React from "react";
 import { Carousel, Card } from "../ui/visuals/AppleCardsCarousel";
+import placeholderPhoto1 from "../../assets/placeholder1.avif"
+import placeholderPhoto2 from "../../assets/placeholder2.avif"
+import placeholderPhoto3 from "../../assets/placeholder3.avif"
 
 type CardData = {
     src: string;
@@ -10,7 +13,28 @@ type CardData = {
 
 const cards: CardData[] = [
     {
-        src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1600&auto=format&fit=crop",
+        src: placeholderPhoto1,
+        title: "Employee Management - React + Spring",
+        category: "Enterprise",
+        content: (
+            <div className="space-y-3 text-app">
+                <p className="text-base text-muted">
+                    HR-style CRUD with pagination/sorting, role-based access, board-game sub-entities.
+                </p>
+                <ul className="list-disc pl-5 text-sm text-muted">
+                    <li>React + TypeScript, Vite, Tailwind, nginx</li>
+                    <li>Spring Boot, REST, DTOs, H2/PG, Third party e-mail authentication, role based authorization</li>
+                    <li>PostgreSQL, Docker Compose (CI-ready structure)</li>
+                </ul>
+                <div className="mt-4 flex gap-3">
+                    <a href="https://github.com/CodecoolGlobal/el-proyecte-grande-sprint-1-java-DelczBalazs" className="rounded-xl bg-[rgb(var(--accent))] px-4 py-2 font-medium text-white shadow">Repo</a>
+                    <a href="#" className="rounded-xl border border-black/10 bg-card px-4 py-2 font-medium text-app shadow-sm dark:border-white/10">Case study</a>
+                </div>
+            </div>
+        ),
+    },
+    {
+        src: placeholderPhoto2,
         title: "SolarWatch - React + Spring Boot",
         category: "Full-stack",
         content: (
@@ -24,36 +48,15 @@ const cards: CardData[] = [
                     <li>CI-ready structure</li>
                 </ul>
                 <div className="mt-4 flex gap-3">
-                    <a href="https://github.com/youruser/solarwatch" className="rounded-xl bg-[rgb(var(--accent))] px-4 py-2 font-medium text-white shadow">Repo</a>
+                    <a href="https://github.com/CodecoolGlobal/solar-watch-MVP-java-DelczBalazs" className="rounded-xl bg-[rgb(var(--accent))] px-4 py-2 font-medium text-white shadow">Repo</a>
                     <a href="#" className="rounded-xl border border-black/10 bg-card px-4 py-2 font-medium text-app shadow-sm dark:border-white/10">Live</a>
                 </div>
             </div>
         ),
     },
     {
-        src: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop",
-        title: "Employee Management - React + Spring",
-        category: "Enterprise",
-        content: (
-            <div className="space-y-3 text-app">
-                <p className="text-base text-muted">
-                    HR-style CRUD with pagination/sorting, role-based access, board-game sub-entities.
-                </p>
-                <ul className="list-disc pl-5 text-sm text-muted">
-                    <li>React TS + Axios, protected routes</li>
-                    <li>Spring (Controller → Service → Repo)</li>
-                    <li>PostgreSQL, Docker Compose</li>
-                </ul>
-                <div className="mt-4 flex gap-3">
-                    <a href="https://github.com/youruser/employee-mgmt" className="rounded-xl bg-[rgb(var(--accent))] px-4 py-2 font-medium text-white shadow">Repo</a>
-                    <a href="#" className="rounded-xl border border-black/10 bg-card px-4 py-2 font-medium text-app shadow-sm dark:border-white/10">Case study</a>
-                </div>
-            </div>
-        ),
-    },
-    {
-        src: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600&auto=format&fit=crop",
-        title: "PresetCrate - VS Code Extension",
+        src: placeholderPhoto3,
+        title: "PresetCrate - VS Code Extension (COMING SOON)",
         category: "DX / Tooling",
         content: (
             <div className="space-y-3 text-app">
@@ -66,7 +69,7 @@ const cards: CardData[] = [
                     <li>DX-first documentation</li>
                 </ul>
                 <div className="mt-4 flex gap-3">
-                    <a href="https://github.com/youruser/presetcrate" className="rounded-xl bg-[rgb(var(--accent))] px-4 py-2 font-medium text-white shadow">Repo</a>
+                    <a href="#" className="rounded-xl bg-[rgb(var(--accent))] px-4 py-2 font-medium text-white shadow">Repo</a>
                     <a href="#" className="rounded-xl border border-black/10 bg-card px-4 py-2 font-medium text-app shadow-sm dark:border-white/10">Marketplace</a>
                 </div>
             </div>

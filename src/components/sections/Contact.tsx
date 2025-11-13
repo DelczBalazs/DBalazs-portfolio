@@ -11,13 +11,13 @@ const Contact = () => {
                 </h2>
                 <div>
                     <a title='Send an email' key={"send email button"} href='mailto:dbalazsworkemail@gmail.com'>
-                        <Button children='Send an Email' className='mt-6 text-lg' />
+                        <Button aria-label='emailButton' children='Send an Email' className='mt-6 text-lg' />
                     </a>
                     <a title='Write on LinkedIn' key={"Write on LinkedIn button"} target='_blank' href='https://www.linkedin.com/in/delczegb/'>
-                        <Button children='Write on LinkedIn' className='mt-6 text-lg' />
+                        <Button aria-label='linkedinButton' children='Write on LinkedIn' className='mt-6 text-lg' />
                     </a>
-                    <a title='back to top anchor button' key={"back to top"} href='/#'>
-                        <Button children='Back to top' className='mt-6 text-lg' />
+                    <a title='Back to top' key={"back to top"} href='/#'>
+                        <Button aria-label='backHomeButton' children='Back to top' className='mt-6 text-lg' />
                     </a>
                 </div>
             </div>

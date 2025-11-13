@@ -1,4 +1,5 @@
 import { BackgroundLines } from "../ui/visuals/BackgroundLines";
+import { ColorfulText } from "../ui/visuals/ColorfulText";
 
 export default function About() {
     return (
@@ -16,8 +17,8 @@ export default function About() {
                     On the frontend, I prefer <strong>TypeScript</strong>, <strong>React</strong>, and <strong>Tailwind CSS</strong> for fast, accessible UIs. On the backend, I’m comfortable with <strong>Java / Spring</strong> and <strong>Node.js / Express</strong>, deploying to <strong>Docker</strong> with <strong>PostgreSQL</strong> or <strong>MongoDB</strong>. I’m pragmatic about testing and CI/CD so shipping stays smooth.
                 </p>
 
-                <p className="mt-4 text-lg text-muted">
-                    My goal: ship production-minded features with great DX, consistent UX, and performance you can trust.
+                <p className="mt-4 text-lg">
+                    <ColorfulText text="My goal:"></ColorfulText> ship production-minded features with great DX, consistent UX, and performance you can trust.
                 </p>
             </div>
         </BackgroundLines>

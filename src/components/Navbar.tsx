@@ -69,10 +69,12 @@ const Navbar = () => {
                 <div className="space-y-1 px-2 pt-2 pb-3">
                     {navigation.map((item) => (
                         <DisclosureButton
+                            id={item.name}
                             key={item.name}
                             as="a"
                             href={item.href}
                             aria-current={item.current ? 'page' : undefined}
+                            aria-label={item.name}
                             className={classNames(
                                 item.current
                                     ? 'bg-gray-900 text-white'

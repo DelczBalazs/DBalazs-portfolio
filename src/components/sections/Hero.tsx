@@ -3,21 +3,32 @@ import { WavyBackground } from "../ui/visuals/WavyBackground";
 import { AnimatedTooltip } from "../ui/visuals/AnimatedTooltip";
 import { ColorfulText } from "../ui/visuals/ColorfulText";
 
+import gitIcon from "../../assets/git-original.svg";
+import typescriptIcon from "../../assets/typescript-original.svg";
+import javaIcon from "../../assets/java-original.svg";
+import reactIcon from "../../assets/react-original.svg";
+import angularIcon from "../../assets/angularjs-original.svg";
+import tailwindIcon from "../../assets/tailwindcss-original.svg";
+import springIcon from "../../assets/spring-original.svg";
+import nodeIcon from "../../assets/nodejs-original.svg";
+import postgresqlIcon from "../../assets/postgresql-original.svg";
+import mongodbIcon from "../../assets/mongodb-original.svg";
+
 type TechItem = { id: number; name: string; designation: string; image: string };
 
 const techItems: TechItem[] = [
-    { id: 1, name: "Git", designation: "VCS", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-    { id: 2, name: "TypeScript", designation: "Language", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-    { id: 3, name: "Java", designation: "Language", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-    /* { id: 4,  name: "Python",        designation: "Language",   image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" }, */
-    { id: 5, name: "React", designation: "Library", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-    { id: 6, name: "Angular", designation: "FE Framework", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" },
-    { id: 7, name: "Tailwind CSS", designation: "CSS Framework", image: "https://cdn.simpleicons.org/tailwindcss/06B6D4" },
-    /* { id: 8,  name: "Node.js",       designation: "Runtime",    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" }, */
-    { id: 9, name: "Express.js", designation: "BE Framework", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
-    { id: 10, name: "Spring", designation: "BE Framework", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
-    { id: 11, name: "PostgreSQL", designation: "Database", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
-    { id: 12, name: "MongoDB", designation: "Database", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" }
+    { id: 1, name: "Git", designation: "VCS", image: gitIcon },
+    { id: 2, name: "Java", designation: "Language", image: javaIcon },
+    { id: 3, name: "Spring", designation: "BE Framework", image: springIcon },
+    { id: 4, name: "TypeScript", designation: "Language", image: typescriptIcon },
+    /* { id: 5,  name: "Python",        designation: "Language",   image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" }, */
+    { id: 6, name: "React", designation: "Library", image: reactIcon },
+    { id: 7, name: "Angular", designation: "FE Framework", image: angularIcon },
+    { id: 8, name: "Tailwind CSS", designation: "CSS Framework", image: tailwindIcon },
+    { id: 9,  name: "Node.js",       designation: "Runtime",    image: nodeIcon },
+    /* { id: 10, name: "Express.js", designation: "BE Framework", image: expressIcon }, */
+    { id: 11, name: "PostgreSQL", designation: "Database", image: postgresqlIcon },
+    { id: 12, name: "MongoDB", designation: "Database", image: mongodbIcon }
 ];
 
 const Hero = () => {
@@ -31,7 +42,7 @@ const Hero = () => {
                 <motion.h1
                     initial={{ opacity: 0, y: 24 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, ease: 'easeOut' }}
+                    transition={{ duration: 0.2, ease: 'easeOut' }}
                     className="text-balance text-4xl font-bold tracking-tight sm:text-6xl"
                 >
                     Hi, my name is Balázs Délczeg.
@@ -39,7 +50,7 @@ const Hero = () => {
                 <motion.p
                     initial={{ opacity: 0, y: 24 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: 'easeOut', delay: 0.05 }}
+                    transition={{ duration: 0.4, ease: 'easeOut', delay: 0.05 }}
                     className="mt-6 max-w-2xl text-lg"
                 >
                     I'm a <ColorfulText text="Full-Stack Developer"></ColorfulText>.

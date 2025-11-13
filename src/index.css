@@ -18,6 +18,10 @@
     .hover-glow:hover, button:hover, a:hover {
         filter: drop-shadow(-8px 45px 17px #69b7e42c);
     }
+
+    button:hover, a:hover {
+        cursor: pointer;
+    }
 }
 
 /* Respect reduced motion */
