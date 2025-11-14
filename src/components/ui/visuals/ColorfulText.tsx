@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "motion/react";
 
 export function ColorfulText({ text }: { text: string }) {
-    const colors = [
+    const colors: string[] = [
         /* "rgb(131, 179, 32)",
         "rgb(47, 195, 106)",
         "rgb(42, 169, 210)",
