@@ -1,4 +1,3 @@
-import React from 'react';
 import { Carousel, Card } from '../ui/visuals/AppleCardsCarousel';
 import placeholderPhoto1 from '../../assets/placeholder1.avif';
 import placeholderPhoto2 from '../../assets/placeholder2.avif';
