@@ -23,7 +23,8 @@ const Contact = () => {
                             className="mt-6 text-lg"
                         />
                     </a>
-                    <a
+                    <a 
+                        rel='noopener'
                         title="Write on LinkedIn"
                         key={'Write on LinkedIn button'}
                         target="_blank"
