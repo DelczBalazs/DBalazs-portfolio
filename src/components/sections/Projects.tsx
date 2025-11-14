@@ -28,7 +28,7 @@ const cards: CardData[] = [
                 </ul>
                 <div className="mt-4 flex gap-3">
                     <a href="https://github.com/CodecoolGlobal/el-proyecte-grande-sprint-1-java-DelczBalazs" className="rounded-xl bg-[rgb(var(--accent))] px-4 py-2 font-medium text-white shadow">Repo</a>
-                    <a href="#" className="rounded-xl border border-black/10 bg-card px-4 py-2 font-medium text-app shadow-sm dark:border-white/10">Case study</a>
+                    <a href="https://delczbalazs.github.io/DBalazs-portfolio" className="rounded-xl border border-black/10 bg-card px-4 py-2 font-medium text-app shadow-sm dark:border-white/10">Case study</a>
                 </div>
             </div>
         ),
@@ -49,7 +49,7 @@ const cards: CardData[] = [
                 </ul>
                 <div className="mt-4 flex gap-3">
                     <a href="https://github.com/CodecoolGlobal/solar-watch-MVP-java-DelczBalazs" className="rounded-xl bg-[rgb(var(--accent))] px-4 py-2 font-medium text-white shadow">Repo</a>
-                    <a href="#" className="rounded-xl border border-black/10 bg-card px-4 py-2 font-medium text-app shadow-sm dark:border-white/10">Live</a>
+                    <a href="https://delczbalazs.github.io/DBalazs-portfolio" className="rounded-xl border border-black/10 bg-card px-4 py-2 font-medium text-app shadow-sm dark:border-white/10">Live</a>
                 </div>
             </div>
         ),
@@ -69,8 +69,8 @@ const cards: CardData[] = [
                     <li>DX-first documentation</li>
                 </ul>
                 <div className="mt-4 flex gap-3">
-                    <a href="#" className="rounded-xl bg-[rgb(var(--accent))] px-4 py-2 font-medium text-white shadow">Repo</a>
-                    <a href="#" className="rounded-xl border border-black/10 bg-card px-4 py-2 font-medium text-app shadow-sm dark:border-white/10">Marketplace</a>
+                    <a href="https://delczbalazs.github.io/DBalazs-portfolio" className="rounded-xl bg-[rgb(var(--accent))] px-4 py-2 font-medium text-white shadow">Repo</a>
+                    <a href="https://delczbalazs.github.io/DBalazs-portfolio" className="rounded-xl border border-black/10 bg-card px-4 py-2 font-medium text-app shadow-sm dark:border-white/10">Marketplace</a>
                 </div>
             </div>
         ),
