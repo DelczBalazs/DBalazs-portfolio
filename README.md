@@ -2,19 +2,20 @@
 <br />
 <div align="center">
 <a id="readme-top"></a>
-  <a href="delczbalazs.github.io">
+  <a href="https://delczbalazs.github.io">
     <img src="images/codebracketdark.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">D. Balázs Portfolio</h3>
 
   <p align="center">
-Simple yet carefully curated developer portfolio — fast, responsive, and focused on showcasing not only my frontend skills, but also my detailed tooling setup (ESLint + Prettier, editor configuration, and Git line-ending/EOF settings) for consistent, professional code quality.
+Simple yet carefully curated developer portfolio — fast, responsive, and focused on showcasing not only my frontend skills, but also my detailed tooling setup (ESLint + Prettier, editor configuration, and Git line-ending/EOF settings) for consistent, professional code quality. The site is built and deployed with a GitHub Actions CI/CD workflow to GitHub Pages, and is prepared for automated testing to keep the codebase maintainable and production-ready.
+
     <br />
     <br />
     <br />
     &middot;
-    <a href="delczbalazs.github.io">View Demo</a>
+    <a href="https://delczbalazs.github.io">View Demo</a>
     &middot;
   </p>
 </div>
@@ -102,7 +103,7 @@ It's a simple Frontend application to my socials and a few information about me,
 
 Délczeg Balázs - dbalazsworkemail@gmail.com
 
-Project Link - [GitHub repository](https://github.com/DelczBalazs/portfolio)
+Project Link - [GitHub repository](https://github.com/DelczBalazs/delczbalazs.github.io)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
