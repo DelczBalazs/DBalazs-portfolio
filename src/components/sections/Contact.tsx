@@ -9,7 +9,7 @@ const Contact = () => {
         >
             <div className="flex flex-col items-center justify-center">
                 <h2 className="hover-glow text-3xl font-bold tracking-tight text-balance sm:text-5xl">
-                    <ColorfulText text="Contact me"></ColorfulText>
+                    <ColorfulText text="Contact me" ariaLabel="Contact me" />
                 </h2>
                 <div>
                     <a
@@ -18,7 +18,7 @@ const Contact = () => {
                         href="mailto:dbalazsworkemail@gmail.com"
                     >
                         <Button
-                            aria-label="emailButton"
+                            ariaLabel="emailButton"
                             children="Send an Email"
                             className="mt-6 text-lg"
                         />
@@ -31,14 +31,14 @@ const Contact = () => {
                         href="https://www.linkedin.com/in/delczegb/"
                     >
                         <Button
-                            aria-label="linkedinButton"
+                            ariaLabel="linkedinButton"
                             children="Write on LinkedIn"
                             className="mt-6 text-lg"
                         />
                     </a>
                     <Button
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                        aria-label="backHomeButton"
+                        ariaLabel="backHomeButton"
                         children="Back to top"
                         className="mt-6 text-lg"
                     />

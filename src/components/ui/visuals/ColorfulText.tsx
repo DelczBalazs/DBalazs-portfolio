@@ -2,7 +2,13 @@
 import React from "react";
 import { motion } from "motion/react";
 
-export function ColorfulText({ text }: { text: string }) {
+type Props = {
+    text: string;
+    ariaLabel?: string;
+    className?: string;
+};
+
+export function ColorfulText({ text, ariaLabel, className }: Props) {
     const colors: string[] = [
         /* "rgb(131, 179, 32)",
         "rgb(47, 195, 106)",
@@ -29,26 +35,38 @@ export function ColorfulText({ text }: { text: string }) {
         return () => clearInterval(interval);
     }, []);
 
-    return text.split("").map((char, index) => (
-        <motion.span
-            key={`${char}-${count}-${index}`}
-            initial={{
-                y: 0,
-            }}
-            animate={{
-                color: currentColors[index % currentColors.length],
-                y: [0, -3, 0],
-                scale: [1, 1.01, 1],
-                filter: ["blur(0px)", `blur(5px)`, "blur(0px)"],
-                opacity: [1, 0.8, 1],
-            }}
-            transition={{
-                duration: 0.5,
-                delay: index * 0.05,
-            }}
-            className="inline-block whitespace-pre font-sans tracking-tight"
+    const wrapperClass = ['inline-flex flex-wrap', className].filter(Boolean).join(' ');
+
+    return (
+        <span
+            aria-label={ariaLabel ?? text}
+            role="text"
+            className={wrapperClass}
         >
-            {char}
-        </motion.span>
-    ));
+            <span className="sr-only">{ariaLabel ?? text}</span>
+            {text.split("").map((char, index) => (
+                <motion.span
+                    aria-hidden="true"
+                    key={`${char}-${count}-${index}`}
+                    initial={{
+                        y: 0,
+                    }}
+                    animate={{
+                        color: currentColors[index % currentColors.length],
+                        y: [0, -3, 0],
+                        scale: [1, 1.01, 1],
+                        filter: ["blur(0px)", `blur(5px)`, "blur(0px)"],
+                        opacity: [1, 0.8, 1],
+                    }}
+                    transition={{
+                        duration: 0.5,
+                        delay: index * 0.05,
+                    }}
+                    className="inline-block whitespace-pre font-sans tracking-tight"
+                >
+                    {char}
+                </motion.span>
+            ))}
+        </span>
+    );
 }

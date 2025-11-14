@@ -9,8 +9,7 @@
 <h3 align="center">D. Balázs Portfolio</h3>
 
   <p align="center">
-Simple yet carefully curated developer portfolio — fast, responsive, and focused on showcasing not only my frontend skills, but also my detailed tooling setup (ESLint + Prettier, editor configuration, and Git line-ending/EOF settings) for consistent, professional code quality. The site is built and deployed with a GitHub Actions CI/CD workflow to GitHub Pages, and is prepared for automated testing to keep the codebase maintainable and production-ready.
-
+A clean, responsive portfolio built with React to showcase my frontend development skills and share my professional journey.
     <br />
     <br />
     <br />
@@ -49,7 +48,10 @@ Simple yet carefully curated developer portfolio — fast, responsive, and focus
 
 ## About The Project
 <p align="center">
-  A simple React application showcasing my frontend skills and sharing crucial information and contact/social links.
+  Simple yet carefully curated developer portfolio — fast, responsive, and focused on showcasing not only my frontend skills, but also my detailed tooling setup (ESLint + Prettier, editor configuration, and Git line-ending/EOF settings) for consistent, professional code quality. The site is built and deployed with a GitHub Actions CI/CD workflow to GitHub Pages, and is backed by automated tests to keep the codebase maintainable and production-ready.
+  
+Tests are written with **Vitest** and **React Testing Library** (including `@testing-library/user-event`), plus **jest-axe** for basic accessibility checks, using a shared `setupTests` file (jsdom + `matchMedia` mocking) so the suite stays fast and reliable.
+
 </p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

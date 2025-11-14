@@ -26,7 +26,7 @@ export default function About() {
                 </p>
 
                 <p className="mt-4 text-lg">
-                    <ColorfulText text="My goal:"></ColorfulText> ship production-minded features
+                    <ColorfulText text="My goal:" ariaLabel="My goal:" /> ship production-minded features
                     with great DX, consistent UX, and performance you can trust.
                 </p>
             </div>
